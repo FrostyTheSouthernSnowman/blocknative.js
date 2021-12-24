@@ -1,0 +1,12 @@
+{
+  "name": "web3-without-metamask",
+  "version": "1.0.0",
+  "description": "Based on [this tutorial](https://github.com/tomw1808/truffle_eth_class2/tree/master/s08/l06-listen-to-events)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
