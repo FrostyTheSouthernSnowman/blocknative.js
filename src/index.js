@@ -20,10 +20,18 @@ bestNodes = [
     MainnetBootnodes[6],
 ]
 
-console.log(bestNodes)
+backupNodes = [
+    MainnetBootnodes[1],
+    MainnetBootnodes[4],
+    MainnetBootnodes[7]
+]
 
-function connectToBestNodes() {
-
+function connectToEthereum() {
+    var status = connectToNodes(bestNodes)
+    if (status == "failed") {
+        // 2 or less connected, try other nodes
+        connectToNodes(backupNodes)
+    }
 }
 
 function startNode() {}
